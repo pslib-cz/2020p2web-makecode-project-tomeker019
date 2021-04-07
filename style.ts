@@ -1,0 +1,2 @@
+scene.setBackgroundColor(9)
+

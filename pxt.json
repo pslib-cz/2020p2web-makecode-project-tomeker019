@@ -1,24 +1,39 @@
 {
-    "name": "template arcade project-name",
+    "name": "Ninja",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "palette": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.1",
+        "animation": "*",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0"
     },
     "files": [
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "style.ts",
+        "images.g.jres",
+        "images.g.ts",
+        "ChangeLevel.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.4.28",
+        "target": "1.4.35",
         "targetId": "arcade"
     },
     "supportedTargets": [
         "arcade"
     ],
     "preferredEditor": "tsprj",
-    "languageRestriction": "javascript-only"
+    "languageRestriction": "javascript-only",
+    "yotta": {
+        "config": {
+            "PXT_GC_CHECKS": 1
+        }
+    }
 }
